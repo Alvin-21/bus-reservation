@@ -9,7 +9,8 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    @return void
+    public function up(): 
     {
         Schema::create('personal_access_tokens', function (Blueprint $table) {
             $table->id();
@@ -26,7 +27,8 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    @return void
+    public function down(): 
     {
         Schema::dropIfExists('personal_access_tokens');
     }
