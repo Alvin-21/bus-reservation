@@ -27,18 +27,9 @@
         <label for="confirm_password">Confirm Password:</label>
         <input type="password" id="password_confirmation" name="password_confirmation" required>
 
-
-
-
         <input type="submit" value="Sign up" name="Submit">
     </form>
 
 </div>
 
-<footer>
-    <p>&copy; 2023 busExpress. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
-
+@include('layouts.footer')
