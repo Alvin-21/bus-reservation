@@ -1,51 +1,26 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('css/style.css')}}" >
-    <title>Sign up</title>
-</head>
-<body>
-
-<header>
-        <nav>
-            <div class="logo"><a href="/">BusExpress</a></div>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="contactus">Contact us</a></li>
-                <li><a href="">Our Services</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="signUp">Sign up</a></li>
-                <li><a href="signIn">Sign in</a></li>
-  
-            </ul>
-        </nav>
-    </header>
+@include('layouts.header')
 
 <div class="contact-container">
-        <h1>Sign up</h1>
-        
-        <form action = "" method="post" class="contact-form">
-        
-            
-            <label for="name">Full Name:</label>
-            <input type="name" id="fullname" name="fullname" required>
+    <h1>Sign up</h1>
+
+    <form action="" method="post" class="contact-form">
 
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required> 
-            
-            <input type="submit" value="Sign up" name="Submit">
-        </form>
-        
-    </div>
+        <label for="name">Full Name:</label>
+        <input type="name" id="fullname" name="fullname" required>
 
-    <footer>
-        <p>&copy; 2023 busExpress. All rights reserved.</p>
-    </footer>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Sign up" name="Submit">
+    </form>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 busExpress. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
-
