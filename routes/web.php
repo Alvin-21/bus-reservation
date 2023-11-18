@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SigninController;
+use App\Http\Controllers\SignupController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,19 +17,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('contactus', function () {
-    return view('contactus');
-});
+Route::get('/contactus', [ContactController::class, 'contact']);
 
-Route::get('signUp', function () {
-    return view('signUp');
-});
+Route::get('/signUp', [SignupController::class, 'signup']);
 
-Route::get('signIn', function () {
-    return view('signIn');
-});
-
+Route::get('/signIn', [SigninController::class, 'signin']);
