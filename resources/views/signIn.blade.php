@@ -36,7 +36,7 @@
             <input type="password" id="password" name="password" required><br><br>
 
             
-            <input type="submit" value="Sign in" name="Submit">
+            <input type="submit" value="Sign in" name="Submit"><a href="dashboard">Go to Dashboard</a>
         </form>
         
     </div>
