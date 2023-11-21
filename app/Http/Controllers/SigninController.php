@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SigninController extends Controller
 {
     public function signin(){
-        return view('signIn');
+        return view('auth.signIn');
     }
 }
