@@ -46,4 +46,32 @@ Route::post('/email/verification-notification', function (Request $request) {
     return back()->with('message', 'Verification link sent!');
 })->middleware(['auth', 'throttle:6,1'])->name('verification.send');
 
+Route::get('contactus', function () {
+    return view('contactus');
+});
+
+Route::get('availability', function () {
+    return view('availability');
+});
+
+Route::get('bookings', function () {
+    return view('bookings');
+});
+
+Route::get('buses', function () {
+    return view('buses');
+});
+
+Route::get('routes', function () {
+    return view('routes');
+});
+
+Route::get('report', function () {
+    return view('report');
+});
+
+Route::get('seats', function () {
+    return view('seats');
+});
+
 require __DIR__.'/auth.php';

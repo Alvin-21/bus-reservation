@@ -1,0 +1,53 @@
+.seat-panel{
+	margin: auto;
+    float: left;
+    padding-left: 27%;
+}
+div .seatCharts-seat{
+	width: 32px;
+    height: 30px;	
+}
+.seatCharts-row div:first-child{
+	display: none;
+}
+.seatCharts-row div:nth-child(even){
+	width: 30px;
+}
+div.seatCharts-seat.selected{
+	background: black;
+}
+.booking-details{
+	margin: auto;
+    float: right;
+    padding-right: 29%;
+}
+
+/*===================*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: #fff;
+	padding-left: 100px;
+}
+
+.seat-panel,
+.front-indicator,
+.booking-details {
+    padding: 20px; /* Adjust as needed */
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.front-indicator,
+.booking-details {
+    margin: 10px; /* Add space between them */
+}
+
+.front-indicator,
+.booking-details {
+    flex: 1; /* Take up remaining space */
+}
+
