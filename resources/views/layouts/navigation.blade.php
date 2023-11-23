@@ -16,6 +16,36 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('bookings')" :active="request()->routeIs('bookings')">
+                        Bookings
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('buses')" :active="request()->routeIs('buses')">
+                        Buses
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('seats')" :active="request()->routeIs('seats')">
+                        Seats
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('availability')" :active="request()->routeIs('availability')">
+                        Availability
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('routes')" :active="request()->routeIs('routes')">
+                        Routes
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('report')" :active="request()->routeIs('report')">
+                        Report
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->

@@ -95,10 +95,6 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
-    background-color: #45a049;
-}
-
 .report-chart {
     width: 80%;
     padding-left: 10%;

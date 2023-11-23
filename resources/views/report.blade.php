@@ -32,8 +32,8 @@
                             <td>Financial</td>
                             <td>Monthly Revenue Report</td>
                             <td>
-                                <button>View</button>
-                                <button>Delete</button>
+                                <button class="element">Edit</button>
+                                <button class="element">Delete</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->

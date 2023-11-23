@@ -34,8 +34,8 @@
                             <td>200 km</td>
                             <td>2 hours</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Delete</button>
+                                <button class="element">Edit</button>
+                                <button class="element">Delete</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->

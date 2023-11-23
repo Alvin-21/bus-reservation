@@ -52,26 +52,26 @@ Route::get('contactus', function () {
 
 Route::get('availability', function () {
     return view('availability');
-});
+})->name('availability');
 
 Route::get('bookings', function () {
     return view('bookings');
-});
+})->name('bookings');
 
 Route::get('buses', function () {
     return view('buses');
-});
+})->name('buses');
 
 Route::get('routes', function () {
     return view('routes');
-});
+})->name('routes');
 
 Route::get('report', function () {
     return view('report');
-});
+})->name('report');
 
 Route::get('seats', function () {
     return view('seats');
-});
+})->name('seats');
 
 require __DIR__.'/auth.php';

@@ -72,10 +72,10 @@ nav a.active {
     background-color: #777;
 }
 
-main {
-    padding: 1rem 2rem; /* Adjust padding based on your design preferences */
-    margin-left: 220px; /* Adjust based on your sidebar width */
-}
+/* main {
+    padding: 1rem 2rem; Adjust padding based on your design preferences
+    margin-left: 220px; Adjust based on your sidebar width
+} */
 
 .content-container {
     display: flex;
@@ -95,4 +95,9 @@ main {
 .icon {
     font-size: 36px;
     margin-bottom: 10px;
+}
+
+
+.element:hover {
+    background-color: #45a049;
 }

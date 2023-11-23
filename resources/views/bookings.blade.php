@@ -36,8 +36,8 @@
                             <td>2023-01-01</td>
                             <td>Confirmed</td>
                             <td>
-                                <button>Edit</button>
-                                <button>Delete</button>
+                                <button class="element">Edit</button>
+                                <button class="element">Delete</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->
