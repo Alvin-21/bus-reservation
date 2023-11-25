@@ -13,6 +13,9 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/jquery.seat-charts.css')}}">
+        {{-- <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.css')}}"> --}}
+        {{-- <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.min.css')}}"> --}}
         <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     </head>
     <body class="font-sans antialiased">
@@ -33,5 +36,14 @@
                 {{ $slot }}
             </main>
         </div>
+        <footer>
+            <script src="{{ asset('js/lib/jquery-1.11.0.min.js') }}"></script>
+            <script src="{{ asset('js/lib/jquery.seat-charts.js') }}"></script>
+            <script src="{{ asset('js/lib/bootstrap.js') }}"></script>
+            <script src="{{ asset('js/lib/bootstrap.min.js') }}"></script>
+            <script src="{{ asset('js/lib/angular.min.js') }}"></script>
+            <script src="{{ asset('js/booking.js') }}"></script>
+            <script src="{{ asset('js/dashboard.js') }}"></script>
+        </footer>
     </body>
 </html>

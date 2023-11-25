@@ -1,24 +1,8 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/jquery.seat-charts.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/style2.css')}}">
-    <title>Bus Booking Admin Dashboard</title>
-</head>
-<body>
-
-@include('templates.header_nav')
-
+<x-app-layout>
     <main>
 
-        <section class="content-container">
+        <section class="content-container mt-8">
             <div class="wrapper">
-                <br> <br> <br> <br> <br> <br> <br>
                 <div class="container">
                     <div id="seat-map" class="seat-panel">
                         <div class="front-indicator">Front</div>
@@ -42,6 +26,25 @@
           
         </section>
     </main>
+</x-app-layout>
+
+
+
+{{-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/jquery.seat-charts.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style2.css')}}">
+    <title>Bus Booking Admin Dashboard</title>
+</head>
+<body>
+
+@include('templates.header_nav')
+    
 </div>
 <script src="{{ asset('js/lib/jquery-1.11.0.min.js') }}"></script>
 <script src="{{ asset('js/lib/jquery.seat-charts.js') }}"></script>
@@ -52,4 +55,4 @@
 <script src="{{ asset('js/dashboard.js') }}"></script>
 
 </body>
-</html>
+</html> --}}
