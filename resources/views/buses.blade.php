@@ -1,21 +1,8 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('css/style2.css')}}">
-    <title>Bus Booking Admin Dashboard</title>
-</head>
-<body>
-
-@include('templates.header_nav')
-
+<x-app-layout>
     <main>
-        <br> <br> <br> <br> <br> 
-        <section class="content-container">
+        <section class="content-container mt-12">
             <div class="bus-table">
-                <table>
+                <table class="bg-white">
                     <thead>
                         <tr>
                             <th>Bus Number</th>
@@ -42,8 +29,25 @@
             </div>
         </section>
     </main>
+</x-app-layout>
+
+
+
+{{-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('css/style2.css')}}">
+    <title>Bus Booking Admin Dashboard</title>
+</head>
+<body>
+
+@include('templates.header_nav')
+
+    
 </div>
 
 <script src="{{ asset('js/dashboard.js') }}"></script>
 </body>
-</html>
+</html> --}}
