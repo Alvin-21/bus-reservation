@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-teal-100 dark:bg-gray-900">
