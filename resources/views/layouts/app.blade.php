@@ -37,6 +37,8 @@
             </main>
         </div>
         <footer>
+            <script src="{{ asset('https://cdn.jsdelivr.net/npm/chart.js') }}"></script>
+            <script src="{{ asset('js/chart-script.js') }}"></script>
             <script src="{{ asset('js/lib/jquery-1.11.0.min.js') }}"></script>
             <script src="{{ asset('js/lib/jquery.seat-charts.js') }}"></script>
             <script src="{{ asset('js/lib/bootstrap.js') }}"></script>
