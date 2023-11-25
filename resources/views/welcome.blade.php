@@ -4,7 +4,7 @@
     <div class="hero-content">
         <h1>Welcome to BusExpress</h1>
         <p>Get where you need to go, fast</p>
-        <a href="#" class="cta-button">Book Now!</a>
+        <a href="book-bus" class="cta-button">Book Now!</a>
     </div>
 </section>
 
