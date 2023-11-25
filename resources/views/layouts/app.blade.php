@@ -14,8 +14,6 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link rel="stylesheet" type="text/css" href="{{asset('css/lib/jquery.seat-charts.css')}}">
-        {{-- <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.css')}}"> --}}
-        {{-- <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.min.css')}}"> --}}
         <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     </head>
     <body class="font-sans antialiased">
