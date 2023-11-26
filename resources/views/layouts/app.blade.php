@@ -15,9 +15,10 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <link rel="stylesheet" type="text/css" href="{{asset('css/lib/jquery.seat-charts.css')}}">
         <link rel="stylesheet" href="{{asset('css/style2.css')}}">
+        <link rel="stylesheet" href="{{asset('css/style.css')}}">
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-teal-100 dark:bg-gray-900">
+        <div class="min-h-screen ">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
