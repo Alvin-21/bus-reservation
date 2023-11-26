@@ -78,4 +78,8 @@ Route::get('book-bus', function () {
     return view('book-bus');
 })->name('book-bus');
 
+Route::get('bus-result', function () {
+    return view('bus-result');
+})->name('bus-result');
+
 require __DIR__.'/auth.php';
