@@ -76,7 +76,7 @@
                     
                     Total: <b>$<span id="total">0</span></b>
                     
-                    <button class="checkout-button element">Checkout &raquo;</button>
+                    <button class="checkout-button element">Confirm Booking &raquo;</button>
                     
                     <div id="legend"></div>
                 </div>
