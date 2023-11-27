@@ -19,8 +19,8 @@
                             <td>Model A</td>
                             <td>John Doe</td>
                             <td>
-                                <button class="element">Edit</button>
-                                <button class="element">Delete</button>
+                                <button class="element btn-custom">Edit</button>
+                                <button class="element btn-custom">Delete</button>
                             </td>
                         </tr>
                         <!-- Add more rows as needed -->
