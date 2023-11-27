@@ -2,24 +2,25 @@
 
 <style>
     .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
+        .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+        }
     }
 
     body {
         background-image: none;
     }
- </style>
+
+</style>
 
 <div class="container">
     <div class="row my-5">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <hr class="mb-4">
 
                 <h4 class="mb-3">Payment</h4>
@@ -189,11 +190,58 @@
                     </div>
                 </div>
                 <hr class="mb-4">
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Confirm Payment</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="paymentModalLabel">Payment Confirmation</h1>
+                                <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="text-success">Your payment has been received successfully.</span>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary modal-close" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
+    <script>
+        (function() {
+            'use strict'
+
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation')
+
+                // Loop over them and prevent submission
+                Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault()
+                        }
+                        if (form.checkValidity() === true) {
+                            event.preventDefault()
+                            // event.stopPropagation()
+                            $("#paymentModal").modal("show")
+                            $(".modal-close").click(function() {
+                                location.replace("/");
+                            });
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+            }, false)
+        })()
+
+    </script>
 </div>
 
-    @include('layouts.footer')
-
+@include('layouts.footer')
