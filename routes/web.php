@@ -82,4 +82,8 @@ Route::get('bus-result', function () {
     return view('bus-result');
 })->name('bus-result');
 
+Route::get('checkout', function () {
+    return view('checkout');
+})->name('checkout');
+
 require __DIR__.'/auth.php';
