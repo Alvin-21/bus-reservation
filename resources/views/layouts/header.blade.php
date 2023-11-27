@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="nav-home">
             <div class="logo"><a href="/">BusExpress</a></div>
             <ul>
                 <li><a href="/">Home</a></li>
