@@ -24,7 +24,7 @@ div.seatCharts-seat.selected{
 
 /*===================*/
 
-.container {
+.container-seats {
     display: flex;
     justify-content: center;
     align-items: center;

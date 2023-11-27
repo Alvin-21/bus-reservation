@@ -62,7 +62,7 @@
 <main>
     <section class="content-container my-5">
         <div class="wrapper">
-            <div class="container">
+            <div class="container-seats">
                 <div id="seat-map" class="seat-panel">
                     <div class="front-indicator">Front</div>
                     
