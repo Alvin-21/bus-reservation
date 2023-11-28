@@ -1,87 +1,26 @@
-{{-- <x-app-guest-layout>
-    <main>
-
-        <section class="content-container mt-8">
-            <div class="wrapper">
-                <div class="container">
-                    <div id="seat-map" class="seat-panel">
-                        <div class="front-indicator">Front</div>
-                        
-                    </div>
-                    
-                    <div class="booking-details">
-                        <h2>Booking Details</h2>
-                        
-                        <h3> Selected Seats (<span id="counter">0</span>):</h3>
-                        <ul id="selected-seats"></ul>
-                        
-                        Total: <b>$<span id="total">0</span></b>
-                        
-                        <button class="checkout-button element">Checkout &raquo;</button>
-                        
-                        <div id="legend"></div>
-                    </div>
-                </div>
-            </div>
-          
-        </section>
-    </main>
-</x-app-guest-layout> --}}
-
-
-
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/jquery.seat-charts.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/lib/bootstrap-theme.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/style2.css')}}">
-    <title>Bus Booking Admin Dashboard</title>
-</head>
-<body>
-
-@include('templates.header_nav')
-    
-</div>
-<script src="{{ asset('js/lib/jquery-1.11.0.min.js') }}"></script>
-<script src="{{ asset('js/lib/jquery.seat-charts.js') }}"></script>
-<script src="{{ asset('js/lib/bootstrap.js') }}"></script>
-<script src="{{ asset('js/lib/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/lib/angular.min.js') }}"></script>
-<script src="{{ asset('js/booking.js') }}"></script>
-<script src="{{ asset('js/dashboard.js') }}"></script>
-
-</body>
-</html> --}}
-
 @include('layouts.header')
 
 <main>
-    <section class="content-container my-5" style="display: ">
+    <section class="content-container my-5" id="seats-section">
         <div class="wrapper">
             <div class="container-seats">
                 <div id="seat-map" class="seat-panel">
                     <div class="front-indicator">Front</div>
                     
                 </div>
-                
+
                 <div class="booking-details ms-5">
                     <h2>Booking Details</h2>
                     
                     <h3> Selected Seats (<span id="counter">0</span>):</h3>
                     {{-- <ul id="selected-seats"></ul> --}}
                     
-                    <span>Total:</span>
                     <b>
                         {{-- $<span id="total">0</span> --}}
                     </b>
                     
-                    <a href="checkout">
-                        <button class="checkout-button element">Confirm Booking &raquo;</button>
-                    </a>
+                    
+                    <button id="confirm-booking" class="checkout-button element">Confirm Booking &raquo;</button>
                     
                     <div id="legend"></div>
                 </div>
@@ -90,7 +29,7 @@
       
     </section>
 
-    <section>
+    <section id="checkout-section" style="display: none">
         <style>
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -121,48 +60,20 @@
                         <span class="badge badge-secondary badge-pill">3</span>
                     </h4>
                     <ul class="list-group mb-3" id="selected-seats">
-                        {{-- <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0 selected-seats">Product name</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$12</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Second product</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-condensed">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <small class="text-muted">Brief description</small>
-                            </div>
-                            <span class="text-muted">$5</span>
-                        </li> --}}
-                        <li class="list-group-item d-flex justify-content-between bg-light">
-                            <div class="text-success">
-                                <h6 class="my-0">Promo code</h6>
-                                <small>EXAMPLECODE</small>
-                            </div>
-                            <span class="text-success">-$5</span>
-                        </li>
                         <li class="list-group-item d-flex justify-content-between">
                             <span>Total (USD)</span>
                             <strong>$<span id="total">0</span></strong>
                         </li>
                     </ul>
         
-                    <form class="card p-2">
+                    {{-- <form class="card p-2">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Promo code">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-secondary">Redeem</button>
                             </div>
                         </div>
-                    </form>
+                    </form> --}}
                 </div>
                 <div class="col-md-8 order-md-1">
                     <h4 class="mb-3">Billing address</h4>

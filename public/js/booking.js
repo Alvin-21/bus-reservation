@@ -50,7 +50,7 @@ $(document).ready(function() {
             click: function () {
                 if (this.status() == 'available') {
                     //let's create a new <li> which we'll add to the cart items
-                    $('<li id="current" class="list-group-item d-flex justify-content-between bg-light">'+this.data().category+' Seat # '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#current" class="cancel-cart-item">[cancel]</a></li>')
+                    $('<li id="current" class="list-group-item d-flex justify-content-around bg-light">'+this.data().category+' Seat # '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#current" class="cancel-cart-item">[cancel]</a></li>')
                         .attr('id', 'cart-item-'+this.settings.id)
                         .data('seatId', this.settings.id)
                         .prependTo($cart);
@@ -92,7 +92,7 @@ $(document).ready(function() {
         });
 
         //let's pretend some seats have already been booked
-        sc.get(['1_2', '4_1', '7_1', '8_2']).status('unavailable');
+        sc.get(['1_5', '7_1', '8_2']).status('unavailable');
 
 });
 
