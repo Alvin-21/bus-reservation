@@ -15,7 +15,7 @@ div.seatCharts-cell {
 
 }
 div.seatCharts-seat {
-	background-color: green;
+	/* background-color: green; */
 	color: white;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -46,12 +46,16 @@ div.seatCharts-seat.selected {
 	background-color: aqua;
 }
 
-div.seatCharts-seat.focused {
+div.seatCharts-seat.focused.first-class {
 	background-color: #6db131;
 }
 
+div.seatCharts-seat.focused.economy-class {
+	background-color: #00eeee;
+}
+
 div.seatCharts-seat.available {
-	background-color: green;
+	/* background-color: green; */
 }
 
 div.seatCharts-seat.unavailable {
@@ -65,4 +69,12 @@ ul.seatCharts-legendList {
 li.seatCharts-legendItem {
 	margin-top: 10px;
 	line-height: 2;
+}
+
+.first-class {
+	background-color: green;
+}
+
+.economy-class {
+	background-color: blue;
 }
