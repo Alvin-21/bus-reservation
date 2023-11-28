@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
+use Symfony\Component\Routing\RouteCompiler;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,9 +76,7 @@ Route::get('seats', function () {
     return view('seats');
 })->name('seats');
 
-Route::get('book-bus', function () {
-    return view('book-bus');
-})->name('book-bus');
+Route::get('book-bus', [RouteController::class, 'index'])->name('book-bus');
 
 Route::get('bus-result', function () {
     return view('bus-result');
