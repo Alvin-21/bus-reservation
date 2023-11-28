@@ -9,10 +9,10 @@
             <x-input-label class="mb-1" for="source" :value="__('Leaving From')" />
             <div class="input-group mb-3">
                 <select class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full" id="source">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected disabled>Choose...</option>
+                    @foreach($routes as $route)
+                    <option value="{{ $route->source }}">{{ $route->source }}</option>
+                    @endforeach
                 </select>
             </div>
         </div>
@@ -22,10 +22,10 @@
             <x-input-label class="mb-1" for="destination" :value="__('Travelling To')" />
             <div class="input-group mb-3">
                 <select class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full" id="destination">
-                    <option selected>Choose...</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option selected disabled>Choose...</option>
+                    @foreach($routes as $route)
+                    <option value="{{ $route->destination }}">{{ $route->destination }}</option>
+                    @endforeach
                 </select>
             </div>
         </div>
