@@ -11,7 +11,7 @@ class AvailableBusController extends Controller
     /**
      * Display the bus results view.
      */
-    public function display(Request $request): View
+    public function display(Request $request)
     {
 
         $buses = DB::table('available_buses')->where([
@@ -21,7 +21,7 @@ class AvailableBusController extends Controller
 
 
         return view('bus-result',[
-            'routes' => $buses
+            'buses' => $buses
         ]);
     }
 }

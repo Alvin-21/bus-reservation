@@ -8,7 +8,7 @@
         <div class="form-group">
             <x-input-label class="mb-1" for="source" :value="__('Leaving From')" />
             <div class="input-group mb-3">
-                <select class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full" id="source">
+                <select class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full" id="source" name="source">
                     <option selected disabled>Choose...</option>
                     @foreach($routes as $route)
                     <option value="{{ $route->source }}">{{ $route->source }}</option>
@@ -21,7 +21,7 @@
         <div class="form-group">
             <x-input-label class="mb-1" for="destination" :value="__('Travelling To')" />
             <div class="input-group mb-3">
-                <select class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full" id="destination">
+                <select class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm w-full" id="destination" name="destination">
                     <option selected disabled>Choose...</option>
                     @foreach($routes as $route)
                     <option value="{{ $route->destination }}">{{ $route->destination }}</option>
@@ -47,7 +47,7 @@
         <div class="flex items-center justify-end mt-4">
 
             <x-primary-button class="ms-4">
-                <a href="bus-result">{{ __('Search Available Buses') }}</a>
+                {{ __('Search Available Buses') }}
             </x-primary-button>
         </div>
     </form>
