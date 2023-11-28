@@ -74,9 +74,14 @@
                     <h3> Selected Seats (<span id="counter">0</span>):</h3>
                     <ul id="selected-seats"></ul>
                     
-                    Total: <b>$<span id="total">0</span></b>
+                    <span>Total:</span>
+                    <b>
+                        $<span id="total">0</span>
+                    </b>
                     
-                    <button class="checkout-button element">Confirm Booking &raquo;</button>
+                    <a href="checkout">
+                        <button class="checkout-button element">Confirm Booking &raquo;</button>
+                    </a>
                     
                     <div id="legend"></div>
                 </div>
