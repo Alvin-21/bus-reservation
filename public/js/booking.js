@@ -53,7 +53,7 @@ $(document).ready(function() {
                     $('<li id="current" class="list-group-item d-flex justify-content-between bg-light">'+this.data().category+' Seat # '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#current" class="cancel-cart-item">[cancel]</a></li>')
                         .attr('id', 'cart-item-'+this.settings.id)
                         .data('seatId', this.settings.id)
-                        .appendTo($cart);
+                        .prependTo($cart);
                     
                     /*
                      * Lets update the counter and total
