@@ -1,7 +1,7 @@
 @include('layouts.header')
 
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+    <form method="POST" action="{{ route('bus-result') }}">
         @csrf
 
         {{-- Source --}}

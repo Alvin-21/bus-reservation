@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AvailableBusController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
@@ -78,9 +79,9 @@ Route::get('seats', function () {
 
 Route::get('book-bus', [RouteController::class, 'index'])->name('book-bus');
 
-Route::get('bus-result', function () {
-    return view('bus-result');
-})->name('bus-result');
+Route::get('bus-result', [AvailableBusController::class, 'display'])->name('bus-result');
+
+Route::post('bus-result', [AvailableBusController::class, 'display'])->name('bus-result');
 
 Route::get('checkout', function () {
     return view('checkout');
