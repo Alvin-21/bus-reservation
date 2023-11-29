@@ -42,11 +42,11 @@
                 <a href="buses">View Details</a>
             </div>
 
-            <div class="content-item">
+            {{-- <div class="content-item">
                 <div class="icon"><a href="seats">💺</a></div>
                 <h2>Seats</h2>
                 <a href="seats">View Details</a>
-            </div>
+            </div> --}}
 
             <div class="content-item">
                 <div class="icon"><a href="availability">📊</a></div>
