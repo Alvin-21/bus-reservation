@@ -1,4 +1,4 @@
-<x-app-profile-layout>
+<x-app-report-layout>
     <main>
         <section class="content-container_report mt-12 ">
             {{-- <div class="report-table">
@@ -28,23 +28,19 @@
                 </table>
             </div> --}}
             <div class="d-flex justify-content-evenly">
-                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" type="submit">Bar Graph</button>
-                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" type="submit">Pie Chart</button>
-                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" type="submit">Line Graph</button>
+                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" id="bar-graph">Bar Graph</button>
+                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" id="pie-chart">Pie Chart</button>
+                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" id="line-graph">Line Graph</button>
             </div>
             <div class="report-chart mt-8">
                 <canvas id="myChart"></canvas>
             </div>
-            <div class="report-chart mt-8">
-                <canvas id="pieChart"></canvas>
+            <div class="report-chart mt-8" >
+                <canvas id="pieChart" style="display: none;"></canvas>
             </div>
             <div class="report-chart mt-8">
-                <canvas id="lineGraph"></canvas>
+                <canvas id="lineGraph" style="display: none"></canvas>
             </div>
-
-            <script>
-
-            </script>
         </section>
     </main>
-</x-app-profile-layout>
+</x-app-report-layout>

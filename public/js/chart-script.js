@@ -7,7 +7,7 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: 'Monthly Revenue',
             data: [1500, 2200, 1800, 2500, 2000],
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            backgroundColor: ['#EE0000', '#77EE00', '#00EEEE', '#7700EE', '#FAF800'],
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 1
         }]
@@ -29,7 +29,7 @@ var myChart = new Chart(pieChart, {
         datasets: [{
             label: 'Monthly Revenue',
             data: [1500, 2200, 1800, 2500, 2000],
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            backgroundColor: ['#EE0000', '#77EE00', '#00EEEE', '#7700EE', '#FAF800'],
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 1
         }]
@@ -51,7 +51,7 @@ var myChart = new Chart(lineGraph, {
         datasets: [{
             label: 'Monthly Revenue',
             data: [1500, 2200, 1800, 2500, 2000],
-            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            backgroundColor: ['#EE0000', '#77EE00', '#00EEEE', '#7700EE', '#FAF800'],
             borderColor: 'rgba(75, 192, 192, 1)',
             borderWidth: 1
         }]
