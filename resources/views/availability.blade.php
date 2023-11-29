@@ -5,24 +5,27 @@
                 <table class="bg-white">
                     <thead>
                         <tr>
-                            <th>Route</th>
+                            <th>Pickup Location</th>
+                            <th>Destination</th>
                             <th>Departure Time</th>
                             <th>Available Seats</th>
-                            <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>City A to City B</td>
-                            <td>2023-01-01 08:00 AM</td>
-                            <td>20</td>
-                            <td>Active</td>
-                            <td>
-                                <button class="element btn-custom">Edit</button>
-                                <button class="element btn-custom">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach($buses as $bus)
+                            <tr>
+                                <td>{{ $bus->source }}</td>
+                                <td>{{ $bus->destination }}</td>
+                                <td>{{ $bus->departure }}</td>
+                                <td>{{ $bus->seats }}</td>
+                                <td>
+                                    <button class="element btn-custom">Edit</button>
+                                    <button class="element btn-custom">Delete</button>
+                                </td>
+                            </tr>
+                        @endforeach
+                        
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
