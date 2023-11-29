@@ -5,8 +5,7 @@
                 <table class="bg-white">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Source</th>
+                            <th>Pickup Location</th>
                             <th>Destination</th>
                             <th>Distance</th>
                             <th>Duration</th>
@@ -14,17 +13,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>City A</td>
-                            <td>City B</td>
-                            <td>200 km</td>
-                            <td>2 hours</td>
-                            <td>
-                                <button class="element btn-custom">Edit</button>
-                                <button class="element btn-custom">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach($routes as $route)
+                            <tr>
+                                <td>{{ $route->source }}</td>
+                                <td>{{ $route->destination }}</td>
+                                <td>{{ $route->distance }} km</td>
+                                <td>{{ $route->duration }} hours</td>
+                                <td>
+                                    <button class="element btn-custom">Edit</button>
+                                    <button class="element btn-custom">Delete</button>
+                                </td>
+                            </tr>
+                        @endforeach
+                        
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
