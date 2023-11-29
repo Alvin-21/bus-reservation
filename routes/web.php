@@ -63,9 +63,7 @@ Route::get('bookings', function () {
 
 Route::get('buses', [BusController::class, 'display'])->name('buses');
 
-Route::get('routes', function () {
-    return view('routes');
-})->name('routes');
+Route::get('routes', [RouteController::class, 'displayRoutes'])->name('routes');
 
 Route::get('report', function () {
     return view('report');

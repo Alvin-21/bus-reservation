@@ -13,4 +13,11 @@ class RouteController extends Controller
             'routes' => Route::all()
         ]);
     }
+
+    public function displayRoutes()
+    {
+        return view('routes', [
+            'routes' => Route::all()
+        ]);
+    }
 }
