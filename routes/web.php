@@ -4,6 +4,7 @@ use App\Http\Controllers\AvailableBusController;
 use App\Http\Controllers\BusController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RouteController;
+use App\Models\AvailableBus;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 use Illuminate\Http\Request;
@@ -54,9 +55,7 @@ Route::get('contactus', function () {
     return view('contactus');
 });
 
-Route::get('availability', function () {
-    return view('availability');
-})->name('availability');
+Route::get('availability', [AvailableBusController::class, 'displayAvailability'])->name('availability');
 
 Route::get('bookings', function () {
     return view('bookings');

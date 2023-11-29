@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AvailableBus;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
@@ -22,6 +23,13 @@ class AvailableBusController extends Controller
 
         return view('bus-result',[
             'buses' => $buses
+        ]);
+    }
+
+    public function displayAvailability()
+    {
+        return view('availability',[
+            'buses' => AvailableBus::all()
         ]);
     }
 }
