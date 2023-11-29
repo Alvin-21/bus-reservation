@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AvailableBusController;
+use App\Http\Controllers\BusController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
@@ -61,7 +62,7 @@ Route::get('bookings', function () {
     return view('bookings');
 })->name('bookings');
 
-Route::get('buses', [AvailableBusController::class, 'display'])->name('buses');
+Route::get('buses', [BusController::class, 'display'])->name('buses');
 
 Route::get('routes', function () {
     return view('routes');
