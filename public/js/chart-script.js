@@ -34,13 +34,10 @@ var myChart = new Chart(pieChart, {
             borderWidth: 1
         }]
     },
-    // options: {
-    //     scales: {
-    //         y: {
-    //             beginAtZero: true
-    //         }
-    //     }
-    // }
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
+    }
 });
 
 var lineGraph = document.getElementById('lineGraph').getContext('2d');
