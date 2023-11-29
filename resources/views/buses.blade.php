@@ -7,22 +7,23 @@
                         <tr>
                             <th>Bus Number</th>
                             <th>Capacity</th>
-                            <th>Model</th>
-                            <th>Driver</th>
+                            <th>Make</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Bus-123</td>
-                            <td>50</td>
-                            <td>Model A</td>
-                            <td>John Doe</td>
-                            <td>
-                                <button class="element btn-custom">Edit</button>
-                                <button class="element btn-custom">Delete</button>
-                            </td>
-                        </tr>
+                        @foreach($buses as $bus)
+                            <tr>
+                                <td>{{ $bus->number_plate }}</td>
+                                <td>{{ $bus->capacity }}</td>
+                                <td>{{ $bus->type }}</td>
+                                <td>
+                                    <button class="element btn-custom">Edit</button>
+                                    <button class="element btn-custom">Delete</button>
+                                </td>
+                            </tr>
+                        @endforeach
+                        
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
