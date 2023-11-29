@@ -61,9 +61,7 @@ Route::get('bookings', function () {
     return view('bookings');
 })->name('bookings');
 
-Route::get('buses', function () {
-    return view('buses');
-})->name('buses');
+Route::get('buses', [AvailableBusController::class, 'display'])->name('buses');
 
 Route::get('routes', function () {
     return view('routes');
