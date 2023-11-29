@@ -1,7 +1,7 @@
-<x-app-layout>
+<x-app-profile-layout>
     <main>
         <section class="content-container_report mt-12 ">
-            <div class="report-table">
+            {{-- <div class="report-table">
                 <table class="bg-white">
                     <thead>
                         <tr>
@@ -26,34 +26,25 @@
                         <!-- Add more rows as needed -->
                     </tbody>
                 </table>
+            </div> --}}
+            <div class="d-flex justify-content-evenly">
+                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" type="submit">Bar Graph</button>
+                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" type="submit">Pie Chart</button>
+                <button class="btn btn-primary btn-lg btn-block bg-gray-800 hover:bg-gray-600 border-transparent" type="submit">Line Graph</button>
             </div>
             <div class="report-chart mt-8">
                 <canvas id="myChart"></canvas>
             </div>
+            <div class="report-chart mt-8">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="report-chart mt-8">
+                <canvas id="lineGraph"></canvas>
+            </div>
+
+            <script>
+
+            </script>
         </section>
     </main>
-</x-app-layout>
-
-
-
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset('css/style2.css')}}">
-    <title>Bus Booking Admin Dashboard</title>
-</head>
-<body>
-
-@include('templates.header_nav')
-
-    
-</div>
-<script src="{{ asset('https://cdn.jsdelivr.net/npm/chart.js') }}"></script>
-<script src="{{ asset('js/chart-script.js') }}"></script>
-<script src="{{ asset('js/dashboard.js') }}"></script>
-
-
-</body>
-</html> --}}
+</x-app-profile-layout>

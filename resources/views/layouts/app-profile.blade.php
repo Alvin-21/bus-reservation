@@ -12,7 +12,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
         <!-- Scripts -->
+        <link href="https://getbootstrap.com/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="{{asset('css/style2.css')}}">
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen dark:bg-gray-900">
@@ -32,5 +34,10 @@
                 {{ $slot }}
             </main>
         </div>
+        <footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <script src="{{ asset('https://cdn.jsdelivr.net/npm/chart.js') }}"></script>
+            <script src="{{ asset('js/chart-script.js') }}"></script>
+        </footer>
     </body>
 </html>
