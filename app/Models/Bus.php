@@ -13,5 +13,6 @@ class Bus extends Model
         'number_plate',
         'capacity',
         'type',
+        'name'
     ];
 }
